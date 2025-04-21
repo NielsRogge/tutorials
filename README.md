@@ -7,3 +7,12 @@ For tutorials on using the 🤗 Transformers library, see my repository [Transfo
 ## Citation
 
 Feel free to cite me when you use some of my tutorials :)
+
+```bibtex
+@misc{rogge2025tutorials,
+  author = {Rogge, Niels},
+  title = {Tutorials},
+  url = {https://github.com/NielsRogge/tutorials},
+  year = {2025}
+}
+```
