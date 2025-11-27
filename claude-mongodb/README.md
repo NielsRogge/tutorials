@@ -26,6 +26,8 @@ In our example, we created 3 subagents, each of which has a different system pro
 - a writer agent, able to write, update and delete data to and from the database
 - a query agent, able to find the most relevant data given a user query.
 
+The official MongoDB MCP server comes with 26 tools by default (they are listed [here](https://github.com/mongodb-js/mongodb-mcp-server?tab=readme-ov-file#%EF%B8%8F-supported-tools)). Rather than having a single agent which has access to all of these tools, we can split it up into specialized subagent, each of which only has access to a select amount of tools required to perform its task, whether it's reading data, writing data or querying data.
+
 ## Setup
 
 First, head over to MongoDB to create a new database: https://www.mongodb.com. Click "Get Started" and then create your first cluster. By default, a dummy database called "sample_mflix" is created which contains some sample collections about movies, theaters and comments about those movies.
@@ -80,7 +82,7 @@ Besides the dummy movie data that MongoDB provides, I also experimented with add
 uv run --env-file .env load_hf_to_mongodb.py
 ```
 
-Next, you should be able to ask the following questions:
+Next, you should be able to ask questions like:
 
 ```bash
 uv run --env-file .env main.py --prompt "Give me the top 10 most popular models on the hub?"
