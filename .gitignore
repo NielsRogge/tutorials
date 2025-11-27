@@ -13,4 +13,5 @@ wheels/
 .env
 
 # Data files
+*.env/
 claude-mongodb/data/

@@ -72,6 +72,20 @@ uv run --env-file .env main.py --prompt "Analyze the schema of all collections i
 uv run --env-file .env main.py --prompt "What's the size of the movies collection?"
 ```
 
+### More fun: adding actual real-world data
+
+Besides the dummy movie data that MongoDB provides, I also experimented with adding real-world data from Hugging Face into MongoDB which the agent can then query. Here I leveraged the [cfahlgren1/hub-stats](https://huggingface.co/datasets/cfahlgren1/hub-stats) dataset which contains useful statistics about models, datasets, papers and more on the hub. One can run the following script to migrate it to MongoDB:
+
+```bash
+uv run --env-file .env load_hf_to_mongodb.py
+```
+
+Next, you should be able to ask the following questions:
+
+```bash
+uv run --env-file .env main.py --prompt "Give me the top 10 most popular models on the hub?"
+```
+
 ## Configuration
 
 The MongoDB MCP server can be configured in two ways:
