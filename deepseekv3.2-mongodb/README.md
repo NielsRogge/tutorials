@@ -4,7 +4,7 @@ This repository showcases how to combine the following amazing pieces of technol
 
 - [DeepSeek v3.2](https://api-docs.deepseek.com/news/news251201) which just got released on Hugging Face, rivaling the best closed-source models such as GPT-5 and Claude Opus 4.5
 - the [Claude Agents SDK](https://platform.claude.com/docs/en/agent-sdk/overview) (formerly called Claude Code SDK)
-- the official [MongoDB MCP server](https://github.com/mongodb-js/mongodb-mcp-server).
+- the official [MongoDB MCP server](https://fandf.co/3LGhRN8).
 
 ## Overview
 
